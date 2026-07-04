@@ -1,6 +1,18 @@
+def functiontest(*args):
+    print("args tuple:", args)
 
-def funtiontest(*args):
-    print(args)
+functiontest(1, 2, 3)
 
 
-funtiontest(1,2,3)
+def test(*args, **kwargs):
+    print("args:", args)
+    print("kwargs:", kwargs)
+
+
+test(
+    "thisisanargstring",
+    name="Talha",
+    role="student",
+    teacher="ali"
+)
+
